@@ -1,16 +1,23 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <script type="text/javascript">
+        function isSameType(value1, value2) {
+            // Check if both values are NaN
+            if (isNaN(value1) && isNaN(value2)) {
+                return true;
+            }
 
+            // Compare types
+            return typeof value1 === typeof value2;
+        }
+
+        // Do not change the code below
+        let value1 = prompt("Enter Start of the Range.");
+        let value2 = prompt("Enter End Of the Range.");
+        alert(isSameType(value1, value2));
+    </script>
 </body>
-
-</html>
